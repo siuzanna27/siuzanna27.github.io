@@ -41,6 +41,7 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .header-animation {
@@ -55,6 +56,75 @@
             margin-top: 10px;
             font-family: 'Courier New', monospace;
             letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+                gap: 15px;
+            }
+
+            .header-animation {
+                width: 50px;
+                height: 50px;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            section {
+                margin: 30px 0;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .card h3 {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                gap: 10px;
+            }
+
+            .header-animation {
+                width: 45px;
+                height: 45px;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
         }
 
         .btn {
@@ -204,7 +274,6 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Siuzanna Al-Sofi. Built with HTML & CSS.</p>
     </footer>
 
 </body>
