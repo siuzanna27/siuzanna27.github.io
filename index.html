@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siuzanna Al-Sofi | Developer & Tester</title>
+    <style>
+        :root {
+            --primary: #10b981;
+            --dark: #0f172a;
+            --light: #1e293b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Courier New', monospace;
+            line-height: 1.6;
+            margin: 0;
+            color: #e2e8f0;
+            background: #0a0e27;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header-animation {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--primary);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--primary);
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            color: #e2e8f0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .skills-tag {
+            background: #334155;
+            color: #cbd5e1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+            border: 1px solid #475569;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            margin-top: 40px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        svg {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <svg class="header-animation" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Black and white abstract animation -->
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#ffffff" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="#000000" stroke-width="2"/>
+                    <rect x="35" y="35" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="2" transform="rotate(45 50 50)"/>
+                    <circle cx="50" cy="50" r="5" fill="#10b981"/>
+                </svg>
+                Siuzanna Al-Sofi
+            </h1>
+            <div class="subtitle">Associate Software Developer | Automation Specialist (Playwright)</div>
+            <p>Melbourne, Victoria</p>
+            <a href="mailto:alsofi.siuzanna@gmail.com" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Associate Software Developer with a unique edge: I don't just build React applications; I write
+                the automated tests that keep them unbreakable. Currently expanding my expertise in Cyber Security, I
+                aim to build secure, robust, and user-centric web solutions.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="card">
+                <p><strong>Frontend:</strong> <span class="skills-tag">React</span> <span
+                        class="skills-tag">TypeScript</span> <span class="skills-tag">JavaScript</span> <span
+                        class="skills-tag">Tailwind CSS</span></p>
+                <p><strong>Testing:</strong> <span class="skills-tag">Playwright</span> <span
+                        class="skills-tag">End-to-End Testing</span> <span class="skills-tag">QA Automation</span></p>
+                <p><strong>Backend/Tools:</strong> <span class="skills-tag">C#</span> <span
+                        class="skills-tag">Firebase</span> <span class="skills-tag">Git</span> <span
+                        class="skills-tag">SQL</span></p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Unified Student Platform</h3>
+                    <p>Designed a comprehensive dashboard for Melbourne Polytechnic to consolidate student systems.</p>
+                    <small>Tech: Figma, UI/UX</small>
+                </div>
+                <div class="card">
+                    <h3>EveneuBook</h3>
+                    <p>A full-stack event management application enabling seamless organizer-attendee interaction.</p>
+                    <small>Tech: React, Firebase, Ant Design</small>
+                </div>
+                <div class="card">
+                    <h3>Library NFC System</h3>
+                    <p>Mobile application for library management using NFC tags for book tracking.</p>
+                    <small>Tech: Flutter, Firebase</small>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Siuzanna Al-Sofi. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+
+</html>
